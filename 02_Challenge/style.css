@@ -75,6 +75,7 @@ button:hover{
 border: 2px solid white;
 background-color: transparent;
 color: white;
+cursor: pointer;
 }
 
 @media (max-width: 630px) {

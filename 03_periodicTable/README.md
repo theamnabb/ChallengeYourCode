@@ -4,4 +4,4 @@
 - CSS
 ---
 
-[Click to see Result](periodicTable.PNG)
+![Click to see Result](periodicTable.PNG)

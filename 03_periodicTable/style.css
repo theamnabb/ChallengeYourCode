@@ -6,11 +6,11 @@
 }
 .heading{
     text-align: center;
-     margin-top: 1.5rem;
+     margin-top: 1rem;
 }
 #periodic {
     border-collapse: collapse;
-    margin: 0.75rem auto;
+    margin: 0.25rem auto;
   }
   .row {
     border: 1px solid rgb(255, 255, 255);
@@ -35,6 +35,9 @@
   }
   .text{
     font-size: 1rem;
+  }
+  .row1{
+    margin-top: 5px;
   }
   .aqua-column {
     background-color: #66ac9c;

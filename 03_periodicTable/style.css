@@ -40,6 +40,9 @@
     cursor: pointer;
   
   }
+  .p{
+    text-align: left;
+  }
   .aqua-column {
     background-color: #66ac9c;
   }

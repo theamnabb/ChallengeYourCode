@@ -3,3 +3,5 @@
 
 [02_Challenges](https://frontchallenge02.netlify.app/)
 
+[03_periodicTable](https://03-periodictable.netlify.app/)
+

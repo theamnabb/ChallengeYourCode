@@ -1,16 +1,19 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(125deg, #000000, #87acd1);
+    background: linear-gradient(125deg, #000000, #878cd1);
   }
   .container {
     background-repeat: no-repeat;
@@ -19,9 +22,40 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 30vw;
-    border-radius: 20px;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 5%;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5),
       -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.5);
+  }
+  .container img {
+    width: 13rem;
+  }
+  .container h1 {
+    font-size: 6rem;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  .container button {
+    width: 30rem;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background-color: #e7d900;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .container button:active {
+    transform: scale(0.95);
+  }
+  .show {
+    padding-top: 8rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
   }

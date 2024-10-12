@@ -1,5 +1,5 @@
 # Deploy Links
-[01_Challenges](https://frontendchallenge01.netlify.app/)
+[01_ProfileLink](https://frontendchallenge01.netlify.app/)
 
 [02_Challenges](https://frontchallenge02.netlify.app/)
 
@@ -7,4 +7,6 @@
 
 [04_bgColor]()
 
-[04_TempConverter]()
+[05_TempConverter]()
+
+[06_Roller Dice]()

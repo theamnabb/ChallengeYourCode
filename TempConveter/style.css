@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(48, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+border: 2px solid black;  
+min-height: 30rem;
+  width: 50rem;
+  padding: 2rem;
+  box-shadow: 0 0 1rem 1rem rgba(2, 2, 2, 0.5);
+  color: #fff;  
+}
+.heading{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+h2{
+    margin: 10px;
+}
+.temp input{
+   display: block;
+    width: 90%;
+    width: 90%;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+

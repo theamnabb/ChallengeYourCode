@@ -41,23 +41,27 @@ body{
     color: var(--white);
     text-align: right;
     margin-bottom: 10px;
-    padding-right: .5rem;
+    padding: 1rem;
 }
 .keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid for buttons */
     gap: 20px; /* Add space between buttons */
     background-color: var(--keypad-bg);
-    width: 29%;
+    /* width: 29%; */
     padding: .5rem;
     border-radius: .2rem;
+    font-size: 1rem;
 }
 button {
     height: 1.5rem;
     border-radius: .2rem;
     outline: none;
     border: none;
-    box-shadow: var(--key-shadow);
     cursor: pointer;
     
+}
+.bluebtn{
+    background-color: var(--key-bg);
+    color: var(--white);
 }

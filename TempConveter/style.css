@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     background-color: rgb(48, 46, 46);
@@ -13,7 +14,7 @@ body{
 .container{
 border: 2px solid black;  
 min-height: 30rem;
-  width: 50rem;
+  width: 40rem;
   padding: 2rem;
   box-shadow: 0 0 1rem 1rem rgba(2, 2, 2, 0.5);
   color: #fff;  
@@ -26,14 +27,61 @@ h2{
     margin: 10px;
 }
 .temp input{
-   display: block;
+    display: block;
     width: 90%;
-    width: 90%;
-  margin: auto;
-  padding: 1rem;
-  text-align: center;
-  outline: none;
-  border: 1px solid #000;
-  border-radius: 0.5rem;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
 }
+.select {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  
+  .option label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium';
+
+  }
+  .option select {
+    cursor: pointer;
+    display: block;
+    border: 1px solid #000;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+  }
+  button{
+    display: block;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: rgb(179, 5, 5);
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  width: 90%;
+  margin: 0 auto 2rem auto;
+  }
+button:hover {
+    opacity: 0.8;
+  }
+  .converted{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
 

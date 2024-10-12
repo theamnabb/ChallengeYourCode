@@ -11,11 +11,42 @@
     <div class="container">
         <h1 class="heading">Temperture Converter</h1>
         <h2 class="heading"> Enter Temperature</h2>
-        
+
         <div class="temp">
             <input type="number" name="temp-num" id="temp-num" placeholder="Enter a Value" />
           </div>
-    </div>
+
+          <!-- Selection Div -->
+          <div class="select">
+            <div class="option">
+              <label for="from">From</label>
+              <select name="from" id="from">
+                <option id="fah" value="fahrenheit" selected>Fahrenheit</option>
+                <option id="cel" value="celsius">Celsius</option>
+              </select>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-exchange"></i>
+            </div>
+            <div class="option">
+              <label for="to">To</label>
+              <select name="to" id="to">
+                <option id="fah" value="fahrenheit">Fahrenheit</option>
+                <option id="cel"  value="celsius" selected>Celsius</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- button -->
+
+          <div class="btn">
+            <button type="button" class="convert" onclick="convert()">Convert</button>
+            <button type="button" class="reset" onclick="reset()">Reset</button>
+          </div>
+            <!-- TExt -->
+
+            <p class="converted" id="convert-msg"></p>        
+        </div>
 </body>
 <script src="./script.js"></script>
 </html>

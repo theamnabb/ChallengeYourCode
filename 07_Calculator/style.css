@@ -5,7 +5,8 @@
     --scr-bg:hsl(224, 36%, 15%);
     --keypad-bg: hsl(223, 31%, 20%);
     --key-bg: hsl(225, 21%, 49%);
-    --key-shadow: hsl(224, 28%, 35%);
+    /* --key-shadow: hsl(224, 28%, 35%); */
+    --key-shadow: hsl(240, 1%, 68%);
     --red-key-togle: hsl(6, 63%, 50%);
     --darkRed:hsl(6, 70%, 34%);
     --white:hsl(0, 0%, 100%);
@@ -85,4 +86,44 @@ button {
     background-color: var(--red-key-togle);
     color: var(--white);
     box-shadow: 0px 4px var(--darkRed);
+}
+.redBtn:active{
+box-shadow: var(--darkRed);
+}
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px var(--key-shadow);
+}
+
+   /* MEDIA QUERY  */
+@media (max-width: 480px) {
+    body {
+        padding: 2px;
+    }
+
+    header {
+        max-width: 300px;
+    }
+
+    .inputCal {
+        max-width: 300px;
+    }
+
+    .inputDisplay {
+        height: 3rem;
+        font-size: 1.25rem;
+        padding: 10px; /* Further reduce padding on small screens */
+    }
+
+    .keys {
+        max-width: 300px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    button {
+        height: 2rem;
+        font-size: 1rem;
+        padding: 5px; /* Reduce padding for mobile devices */
+    }
 }

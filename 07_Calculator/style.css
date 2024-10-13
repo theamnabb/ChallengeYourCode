@@ -34,6 +34,22 @@ body{
     
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+
 .inputCal {
     width: 100%;
     max-width: 500px;

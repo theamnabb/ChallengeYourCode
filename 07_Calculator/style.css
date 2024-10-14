@@ -129,7 +129,7 @@ button:active {
     .inputDisplay {
         height: 3rem;
         font-size: 1.25rem;
-        padding: 10px; /* Further reduce padding on small screens */
+        padding: 10px;
     }
 
     .keys {
@@ -141,6 +141,6 @@ button:active {
     button {
         height: 2rem;
         font-size: 1rem;
-        padding: 5px; /* Reduce padding for mobile devices */
+        padding: 5px;
     }
 }

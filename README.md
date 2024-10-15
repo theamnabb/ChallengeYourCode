@@ -10,3 +10,5 @@
 [05_TempConverter]()
 
 [06_Roller Dice]()
+
+[07_Calculator]()

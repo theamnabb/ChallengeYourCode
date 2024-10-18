@@ -52,8 +52,12 @@ let themes = {
         '--white':'hsl(0, 0%, 100%)',
         '--grayish-blue':'hsl(221, 14%, 31%)',
         '--text-color': 'hsl(0, 0%, 100%)',
-        '--btnBg': 'hsl(0, 0%, 100%)',
+        '--btnBg': 'hsl(0, 0%, 90%)',
+        '--btnBg1': 'hsl(0, 0%, 100%)',
         '--btnClr':'hsl(221, 14%, 31%)',
+        '--btnHoverBg':'hsl(225, 11%, 69%)',
+        '--equalBtnHover':'hsl(6, 49%, 59%)',
+
     },
     2: {
         '--main-bg': 'hsl(0, 0%, 90%)',
@@ -67,22 +71,13 @@ let themes = {
         // '--key-bg-secondary': 'hsl(45, 7%, 89%)',
         '--grayish-blue': 'hsl(185, 58%, 25%)',
         '--text-color': 'hsl(60, 10%, 19%)',
-        '--btnBg': 'hsl(0, 0%, 100%)',
+        '--btnBg': 'hsl(0, 0%, 90%)',
+        '--btnBg1': 'hsl(0, 0%, 100%)',
         '--btnClr':'hsl(221, 14%, 31%)',
+        '--btnHoverBg':'hsl(185, 32%, 57%)',
+        '--equalBtnHover':'hsl(25, 89%, 58%)',
+
     },
-    // 3: {
-    //     '--main-bg': 'hsl(185deg 100% 36.69%)',
-    //     '--scr-bg': 'hsl(268, 71%, 12%)',
-    //     '--keypad-bg': 'hsl(268, 47%, 21%)',
-    //     '--resetBtn': 'hsl(281, 89%, 26%)',
-    //     '--key-shadow': 'hsl(285, 91%, 52%)',
-    //     '--red-key-togle': 'hsl(176, 100%, 44%)',
-    //     '--equalShadow': 'hsl(177, 92%, 70%)',
-    //     '--grayish-blue': 'hsl(290, 70%, 36%)',
-    //     '--text-color': 'hsl(0, 0%, 100%)',
-    //     '--btnBg': 'hsl(281, 89%, 26%)',
-    //     '--btnClr':'hsl(52, 100%, 62%)',
-    // }
     3: {
         '--main-bg': 'hsl(224deg 49.87% 86.16%)',
         '--scr-bg': 'hsl(0deg 52.13% 44.61%)',
@@ -94,8 +89,11 @@ let themes = {
         '--white': 'hsl(0deg 0% 0%)',
         '--grayish-blue': 'hsl(0deg 0% 0%)',
         ' --text-color':' hsl(0deg 0% 100%)',
-        '--btnBg': 'hsl(0, 0%, 93%)',
+        '--btnBg': 'hsl(0, 0%, 90%)',
+        '--btnBg1': 'hsl(0, 0%, 100%)',
         '--btnClr': 'hsl(0deg 0% 0%)',
+        '--btnHoverBg':'hsl(64.21deg 76.91% 63.13%)',
+        '--equalBtnHover':'hsl(64, 78%, 39%)',
     }
 };
 

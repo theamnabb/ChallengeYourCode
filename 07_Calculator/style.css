@@ -119,6 +119,9 @@ button {
     box-shadow: 0px 4px var(--key-shadow);
     background-color: var(--btnBg);
 }
+button:hover{
+    background-color: var(--btnBg1);
+}
 
 
 .resetBtn, .reset-btn{
@@ -127,6 +130,10 @@ button {
     box-shadow: 0px 4px var(--grayish-blue)
     
 }
+.resetBtn:hover, .reset-btn:hover{
+   background-color: var(--btnHoverBg);
+   color:var(--white);
+}
 .spanBtn {
     grid-column: span 2; 
 }
@@ -134,6 +141,9 @@ button {
     background-color: var(--red-key-togle);
     color: var(--white);
     box-shadow: 0px 4px var(--equalShadow);
+}
+.equalBtn:hover{
+background-color: var(--equalBtnHover);
 }
 .equalBtn:active{
 box-shadow: var(--equalShadow);
@@ -146,7 +156,8 @@ button:active {
 
 
    /* MEDIA QUERY  */
-@media (max-width: 480px) {
+
+@media (max-width: 780px) {
     body {
         padding: 2px;
     }
@@ -179,7 +190,5 @@ button:active {
     .theme-toggle {
         margin-left: 3rem;
     }
-    .toggle-switch{
-        margin-bottom: 5px;
-        }
+    
 }

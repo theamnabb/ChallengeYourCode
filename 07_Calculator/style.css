@@ -11,7 +11,7 @@
     --white:hsl(0, 0%, 100%);
     --grayish-blue:hsl(221, 14%, 31%);
     --text-color: hsl(0, 0%, 100%);
-    --buttonClr:hsl(221, 14%, 31%);
+    --btnClr:hsl(221, 14%, 31%);
 } */
 
 /* :root{
@@ -27,6 +27,7 @@
     --grayish-cray-shadow:hsl(185, 58%, 25%);
     --text-color: hsl(60, 10%, 19%);
     --buttonClr:hsl(221, 14%, 31%);
+    --btnBg : hsl(0, 0%, 100%);
 } */
 
 
@@ -70,6 +71,7 @@ input[type="range"] {
     border-radius: 50px;
     cursor: pointer;
     width: 60px;
+    height: 25px;
 }
 .toggle-switch{
 margin-bottom: 20px;
@@ -113,8 +115,9 @@ button {
     border: none;
     cursor: pointer;
     text-align: center;   
-    color: hsl(221, 14%, 31%); 
+    color: var(--btnClr);
     box-shadow: 0px 4px var(--key-shadow);
+    background-color: var(--btnBg);
 }
 
 
@@ -157,7 +160,7 @@ button:active {
     }
 
     .inputDisplay {
-        height: 3rem;
+        height: 2.2rem;
         font-size: 1.25rem;
         padding: 10px;
     }
@@ -169,8 +172,14 @@ button:active {
     }
 
     button {
-        height: 2rem;
-        font-size: 1rem;
+        height: 1.5rem;
+        font-size: .7rem;
         padding: 5px;
     }
+    .theme-toggle {
+        margin-left: 3rem;
+    }
+    .toggle-switch{
+        margin-bottom: 5px;
+        }
 }

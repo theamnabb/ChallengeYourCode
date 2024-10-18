@@ -74,6 +74,15 @@ input[type="range"] {
     height: 25px;
     padding: 10px;
 }
+input[type=range]::-webkit-slider-thumb{
+    appearance: none;
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--red-key-togle);
+    transition: background-color 0.5s;
+}
+
 .toggle-switch{
     margin-bottom: 20px;
 }

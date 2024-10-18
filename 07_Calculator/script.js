@@ -98,8 +98,8 @@ let themes = {
 };
 
 // Function to apply theme based on slider value
-const applyTheme = (theme) => {
-    const selectedTheme = themes[theme];
+let applyTheme = (theme) => {
+    let selectedTheme = themes[theme];
     for (let variable in selectedTheme) {
         body.style.setProperty(variable, selectedTheme[variable]);
     }

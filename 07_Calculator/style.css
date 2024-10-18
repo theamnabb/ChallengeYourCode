@@ -70,11 +70,12 @@ input[type="range"] {
     background-color: var(--keypad-bg);
     border-radius: 50px;
     cursor: pointer;
-    width: 60px;
+    width: 65px;
     height: 25px;
+    padding: 10px;
 }
 .toggle-switch{
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 span{
     font-size: 0.5rem;

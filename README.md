@@ -11,4 +11,4 @@
 
 [06_Roller Dice]()
 
-[07_Calculator]()
+[07_Calculator](https://simple-calculaor.netlify.app/)

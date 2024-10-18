@@ -5,7 +5,7 @@
 - JavaScript
 ---
 ### 🎨 Theme # 01
-![](./images/calTheme1.PNG)
+![](./images/frontmentor.webp)
 ### 🎨 Theme # 02
 ![](./images/calTheme2.PNG)
 ### 🎨 Theme # 03

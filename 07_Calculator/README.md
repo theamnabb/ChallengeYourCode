@@ -4,12 +4,12 @@
 - CSS
 - JavaScript
 ---
-### Theme # 01
+### 🎨 Theme # 01
 ![](./images/calTheme1.PNG)
-### Theme # 02
+### 🎨 Theme # 02
 ![](./images/calTheme2.PNG)
-### Theme # 03
+### 🎨 Theme # 03
 ![](./images/calTheme3.PNG)
 
-### Mobile Version
+### 🎨 Mobile Version
 ![](./images/calMbl1.PNG)

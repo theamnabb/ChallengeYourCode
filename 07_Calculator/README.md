@@ -2,7 +2,7 @@
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript  
 ---
 ### 🎨 Theme # 01
 ![](./images/frontmentor.webp)

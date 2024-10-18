@@ -15,7 +15,7 @@
 } */
 
 /* :root{
-    --main-bg: hsl(0, 0%, 90%);
+    --main-bg: hsl(0, 0%, 90%); 
     --scr-bg:hsl(0, 0%, 93%);
     --keypad-bg: hsl(0, 5%, 81%);
     --resetBtn: hsl(185, 42%, 37%);

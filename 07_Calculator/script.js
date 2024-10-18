@@ -68,7 +68,6 @@ let themes = {
         '--key-shadow': 'hsl(35, 11%, 61%)',
         '--red-key-togle': 'hsl(25, 98%, 40%)',
         '--equalShadow': 'hsl(25, 99%, 27%)',
-        // '--key-bg-secondary': 'hsl(45, 7%, 89%)',
         '--grayish-blue': 'hsl(185, 58%, 25%)',
         '--text-color': 'hsl(60, 10%, 19%)',
         '--btnBg': 'hsl(0, 0%, 90%)',

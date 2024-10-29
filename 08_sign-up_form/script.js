@@ -1,0 +1,1 @@
+let emailField = document.getElementById ('emailOutput');

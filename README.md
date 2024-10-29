@@ -12,3 +12,5 @@
 [06_Roller Dice]()
 
 [07_Calculator](https://simple-calculaor.netlify.app/)
+
+[08_NewLetter | Sign-in Form]()

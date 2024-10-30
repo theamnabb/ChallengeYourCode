@@ -26,7 +26,7 @@
 
     </head>
 
-<body class="bg-DslateGrey text-white font-customFont min-h-screen" lang="en">
+<body class="bg-DslateGrey text-white font-customFont min-h-screen"  id="content1" lang="en">
   <main class="flex flex-col items-center justify-center min-h-screen" >
     <div class="bg-white rounded-0 lg:rounded-[40px] shadow-lg max-w-md lg:max-w-4xl 2xl:min-h-screen shadow-2xl">
 
@@ -49,8 +49,8 @@
          
           <form class="w-full mt-6">
               <label class="font-bold block text-sm font-medium text-DslateGrey mb-2" for="email">Email address</label>
-              <input type="email" id="email" placeholder="email@company.com" class="border border-DslateGrey p-4 w-full rounded mb-4" />
-              <button type="submit" class="w-full bg-DslateGrey hover:bg-gradient-to-r from-pink-500 to-orange-500 text-white p-4 rounded-lg font-bold hover:opacity-90">Subscribe to monthly newsletter</button>
+              <input type="email" id="email" placeholder="email@company.com" class="border border-DslateGrey focus:border-DslateGrey outline-none p-4 w-full rounded mb-4" />
+              <button type="submit" id="btn1" class="w-full bg-DslateGrey hover:bg-gradient-to-r from-pink-500 to-orange-500 text-white p-4 rounded-lg font-bold hover:opacity-90">Subscribe to monthly newsletter</button>
           </form>
       </div>
 
@@ -65,7 +65,7 @@
   
   <!-- Success message start -->
   <!-- Success Message Section -->
-  <div class="bg-white rounded-[40px] shadow-lg max-w-md lg:max-w-lg mx-auto mt-6 p-8 shadow-2xl">
+  <div class="bg-white rounded-[40px] shadow-lg max-w-md lg:max-w-lg mx-auto mt-6 p-8 shadow-2xl" id="content2">
     <div class="text-DslateGrey text-left m-6">
       <!-- Success Icon -->
       <img src="./images/icon-success.svg" alt="success icon" class="mb-6 w-12 h-12">
@@ -81,7 +81,7 @@
       </p>
   
       <!-- Dismiss Button -->
-      <button type="button" class="w-full bg-DslateGrey hover:bg-gradient-to-r from-pink-500 to-orange-500 text-white p-4 rounded-lg font-bold hover:opacity-90 ">
+      <button type="button" id="btn2"  class="w-full bg-DslateGrey hover:bg-gradient-to-r from-pink-500 to-orange-500 text-white p-4 rounded-lg font-bold hover:opacity-90 ">
         Dismiss message
       </button>
     </div>

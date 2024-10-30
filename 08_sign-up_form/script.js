@@ -3,11 +3,24 @@ let content2 = document.getElementById('content2') // Second card Access
 let emailInput = document.getElementById('email') // inputfield Email
 let btn1 = document.getElementById('btn1') // First Button aaccess
 let btn2 = document.getElementById('btn2') // Second Button aaccess
-let emailField = document.getElementById ('emailOutput'); // for span Email update 
+let emailOutput = document.getElementById ('emailOutput'); // for span Email update 
 
 
-function update(){
-    emailField.innerHTML = 'Update email'
+// function updateEmail(){
+//     emailField.textContent = emailInput.value;
+// }
+
+// btn2.addEventListener('click', updateEmail)
+
+// input EventListener
+function ValidateEmail(){
+    let userEmail = emailInput.value;
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(emailPattern.test(userEmail)){
+        
+
+    }
+
 }
 
-btn2.addEventListener('click', update)
+emailInput.addEventListener('input', ValidateEmail)

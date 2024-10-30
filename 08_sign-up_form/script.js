@@ -4,3 +4,10 @@ let emailInput = document.getElementById('email') // inputfield Email
 let btn1 = document.getElementById('btn1') // First Button aaccess
 let btn2 = document.getElementById('btn2') // Second Button aaccess
 let emailField = document.getElementById ('emailOutput'); // for span Email update 
+
+
+function update(){
+    emailField.innerHTML = 'Update email'
+}
+
+btn2.addEventListener('click', update)

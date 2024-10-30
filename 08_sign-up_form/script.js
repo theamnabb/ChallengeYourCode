@@ -12,7 +12,7 @@ let emailOutput = document.getElementById ('emailOutput'); // for span Email upd
 
 // btn2.addEventListener('click', updateEmail)
 
-// input EventListener
+// input EventListener llll
 function ValidateEmail(){
     let userEmail = emailInput.value;
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

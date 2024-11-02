@@ -4,8 +4,11 @@
 - CSS
  
  ---
- 
+
  ![See Result](./profile_Social_Links.gif)
 
- ![See Result](/01_Challenge/Challenge1.PNG)
+<p align="center">
+  <img src="./Challenge1.PNG" alt="See Result">
+</p>
+
  

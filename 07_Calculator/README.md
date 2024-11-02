@@ -16,5 +16,8 @@
 ![](./images/calTheme3.PNG) -->
 
 ### 🎨 Mobile Version
-![](./images/calMbl1.PNG)
+<p align="center">
+  <img src="./images/calMbl1.PNG" alt="See Result">
+</p>
+
 

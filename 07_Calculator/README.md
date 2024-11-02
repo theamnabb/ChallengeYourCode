@@ -6,7 +6,10 @@
 ---
 
 ### 🎨 Output 
-![](./images/calculator.gif)
+<p align="center">
+  <img src="./images/calculator.gif" alt="See Result">
+</p>
+
 
 <!-- ### 🎨 Theme # 01
 ![](./images/frontmentor.webp)

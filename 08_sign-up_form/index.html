@@ -1,109 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewLetter | Sign-in Form </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewLetter | Sign-in Form</title>
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
-      <!-- TAILWIND CSS -->
+    <!-- TAILWIND CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
 
-
     <!-- FONTAWESOME -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    
-      <!-- Font Size -->
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <!-- Font Size -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-      <!-- favicon -->    
-    <link rel="shortcut icon" href="./images/user-login.png" type="image/x-icon">
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/user-login.png"
+      type="image/x-icon"
+    />
+  </head>
 
-    </head>
+  <body class="bg-DslateGrey text-white font-customFont min-h-screen" lang="en">
+    <main class="flex flex-col items-center justify-center min-h-screen">
+      <div
+        id="content1"
+        class="bg-white rounded-0 lg:rounded-[40px] shadow-lg max-w-md lg:max-w-4xl 2xl:min-h-screen shadow-2xl"
+      >
+        <!-- Sign In Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!-- Left Column: Image -->
+          <div
+            class="flex flex-col items-center justify-center p-9 w-full max-w-lg order-2 lg:order-1"
+          >
+            <!-- Text Stay  -->
+            <div class="flex flex-col items-start w-full">
+              <h1 class="font-bold text-DslateGrey text-5xl mb-6">
+                Stay updated!
+              </h1>
+              <p class="text-DslateGrey mb-6">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p>
 
-<body class="bg-DslateGrey text-white font-customFont min-h-screen"   lang="en">
-  <main class="flex flex-col items-center justify-center min-h-screen" >
-    <div id="content1" class="bg-white rounded-0 lg:rounded-[40px] shadow-lg max-w-md lg:max-w-4xl 2xl:min-h-screen shadow-2xl">
-
-      <!-- Sign In Section -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-
-        <!-- Left Column: Image --> 
-        <div class="flex flex-col items-center justify-center p-9 w-full max-w-lg order-2 lg:order-1">
-          <!-- Text Stay  -->
-          <div class="flex flex-col items-start w-full">
-              <h1 class="font-bold text-DslateGrey text-5xl mb-6">Stay updated!</h1>
-              <p class="text-DslateGrey mb-6">Join 60,000+ product managers receiving monthly updates on:</p>
-              
-              <ul class="text-DslateGrey space-y-3 ">
-                  <li class="flex items-start "><img class="mr-2 " src="./images/icon-list.svg" alt="icon-list">Product discovery and building what matters</li>
-                  <li class="flex items-start "><img class="mr-2" src="./images/icon-list.svg" alt="icon-list">Measuring to ensure updates are a success</li>
-                  <li class="flex items-start "><img class="mr-2" src="./images/icon-list.svg" alt="icon-list">And much more!</li>
+              <ul class="text-DslateGrey space-y-3">
+                <li class="flex items-start">
+                  <img
+                    class="mr-2"
+                    src="./images/icon-list.svg"
+                    alt="icon-list"
+                  />Product discovery and building what matters
+                </li>
+                <li class="flex items-start">
+                  <img
+                    class="mr-2"
+                    src="./images/icon-list.svg"
+                    alt="icon-list"
+                  />Measuring to ensure updates are a success
+                </li>
+                <li class="flex items-start">
+                  <img
+                    class="mr-2"
+                    src="./images/icon-list.svg"
+                    alt="icon-list"
+                  />And much more!
+                </li>
               </ul>
-          </div>
-         
-          <form class="w-full mt-6" novalidate>
-            <div class="flex items-center justify-between">
-              <label class="font-bold block text-sm font-medium text-DslateGrey mb-2" for="email">Email address</label>
-              <span id="emailError" class="font-bold block text-sm font-medium text-tomato mb-2 hidden" role="alert" aria-live="polite">Valid email required</span>
             </div>
-            <input
-              type="email"
-              id="email"
-              placeholder="email@company.com"
-              class="border border-DslateGrey  outline-none p-4 w-full rounded mb-4"
-              oninput="validateEmail()"
+
+            <form class="w-full mt-6" novalidate>
+              <div class="flex items-center justify-between">
+                <label
+                  class="font-bold block text-sm font-medium text-DslateGrey mb-2"
+                  for="email"
+                  >Email address</label
+                >
+                <span
+                  id="emailError"
+                  class="font-bold block text-sm font-medium text-tomato mb-2 hidden"
+                  role="alert"
+                  aria-live="polite"
+                  >Valid email required</span
+                >
+              </div>
+              <input
+                type="email"
+                id="email"
+                placeholder="email@company.com"
+                class="border border-DslateGrey outline-none p-4 w-full rounded mb-4"
+                oninput="validateEmail()"
+              />
+              <button
+                type="submit"
+                id="btn1"
+                class="w-full bg-DslateGrey hover:bg-gradient-to-r from-pink-500 to-orange-500 text-white p-4 rounded-lg font-bold hover:opacity-90"
+              >
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+
+          <!-- Right Column: Input Fields -->
+          <div class="flex items-center justify-center order-1 lg:order-2">
+            <img
+              src="./images/illustration-sign-up-desktop.svg"
+              alt="image"
+              class="rounded-[30px] p-4"
             />
-            <button
-              type="submit"
-              id="btn1"
-              class="w-full bg-DslateGrey hover:bg-gradient-to-r from-pink-500 to-orange-500 text-white p-4 rounded-lg font-bold hover:opacity-90"
-            >
-              Subscribe to monthly newsletter
-            </button>
-          </form>
+          </div>
+        </div>
       </div>
 
-        <!-- Right Column: Input Fields -->
-        <div class="flex items-center justify-center order-1 lg:order-2 ">
-          <img src="./images/illustration-sign-up-desktop.svg" alt="image" class="rounded-[30px] p-4"  />
-      </div>  
-    </div>
+      <!-- Success message start -->
+      <!-- Success Message Section -->
+      <div
+        class="bg-white rounded-[40px] shadow-lg max-w-md lg:max-w-lg mx-auto mt-6 p-8 shadow-2xl hidden"
+        id="content2"
+      >
+        <div class="text-DslateGrey text-left m-6">
+          <!-- Success Icon -->
+          <img
+            src="./images/icon-success.svg"
+            alt="success icon"
+            class="mb-6 w-12 h-12"
+          />
 
-    
-  </div>
-  
-  <!-- Success message start -->
-  <!-- Success Message Section -->
-  <div class="bg-white rounded-[40px] shadow-lg max-w-md lg:max-w-lg mx-auto mt-6 p-8 shadow-2xl hidden" id="content2">
-    <div class="text-DslateGrey text-left m-6">
-      <!-- Success Icon -->
-      <img src="./images/icon-success.svg" alt="success icon" class="mb-6 w-12 h-12">
-  
-      <!-- Success Message Header -->
-      <h1 class="font-bold text-5xl mb-4">Thanks for subscribing!</h1>
-  
-      <!-- Success Message Body -->
-      <p class="text-base mb-8">
-        A confirmation email has been sent to <br>
-        <span class="font-bold" id="emailOutput">@</span>. 
-        Please open it and click the button inside to confirm your subscription.
-      </p>
-  
-      <!-- Dismiss Button -->
-      <button type="button" id="btn2"  class="w-full bg-DslateGrey hover:bg-gradient-to-r from-pink-500 to-orange-500 text-white p-4 rounded-lg font-bold hover:opacity-90 ">
-        Dismiss message
-      </button>
-    </div>
-  </div>
-  
+          <!-- Success Message Header -->
+          <h1 class="font-bold text-5xl mb-4">Thanks for subscribing!</h1>
 
-  </main>
-  <script src="./script.js"></script>
-</body>
+          <!-- Success Message Body -->
+          <p class="text-base mb-8">
+            A confirmation email has been sent to <br />
+            <span class="font-bold" id="emailOutput">@</span>. Please open it
+            and click the button inside to confirm your subscription.
+          </p>
+
+          <!-- Dismiss Button -->
+          <button
+            type="button"
+            id="btn2"
+            class="w-full bg-DslateGrey hover:bg-gradient-to-r from-pink-500 to-orange-500 text-white p-4 rounded-lg font-bold hover:opacity-90"
+          >
+            Dismiss message
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>

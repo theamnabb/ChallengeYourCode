@@ -13,4 +13,4 @@
 
 [07_Calculator](https://simple-calculaor.netlify.app/)
 
-[08_NewLetter | Sign-in Form]()
+[08_NewLetter | Sign-in Form](https://signi-form.netlify.app/)

@@ -14,3 +14,5 @@
 [07_Calculator](https://simple-calculaor.netlify.app/)
 
 [08_NewLetter | Sign-in Form](https://signi-form.netlify.app/)
+
+[09_Password Generator](https://passmategenerator.netlify.app/)

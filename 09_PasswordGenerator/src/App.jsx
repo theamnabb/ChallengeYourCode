@@ -1,14 +1,39 @@
 
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 function App() {
 
+  const characters = {
+    uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    lowercase: "abcdefghijklmnopqrstuvwxyz",
+    numbers: "0123456789",
+    symbols: "!@#$%^&*()_+-=[]{}|;:,.<>?",
+  };
 
-const [length, setLength] = useState(8)
-const [Password, setPassword] = useState('')
-const [upper, setUpper] = useState(false)
-const [lower, setLower] = useState(false)
-const [numberAllowed , setNumberAllowed] = useState(false)
-const [symbolAllowed, setSymbolAllowed] = useState(false)
+const [length, setLength] = useState(8);
+const [password, setPassword] = useState('');
+const [settings, setSettings] = useState({
+  uppercase: true,
+  lowercase:false,
+  numbers:true,
+  symbols:true
+});
+
+
+// Generate Password  || but when a method repeated again and agai then use callBack () 
+const passwordGenerate = useCallback (()=>{
+  let charset = '';
+    if (settings.uppercase) charset += characters.uppercase;
+    if (settings.lowercase) charset += characters.lowercase;
+    if (settings.numbers) charset += characters.numbers;
+    if (settings.symbols) charset += characters.symbols;
+
+    let result = '';
+    for (let i = 0; i< length; i++){
+      result += charset.charAt(Math.floor(Math.random() * charset.length))
+    }
+    setPassword(result)
+},[length, settings, setPassword]);
+
 
 
   return (

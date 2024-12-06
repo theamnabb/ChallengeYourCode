@@ -40,13 +40,14 @@ The GitHub Profile Finder is a sleek and interactive web app that allows users t
 ## Developer 👩‍💻 
 <table>
 <td>
-<b> 
-AaMna AnSari
-</b>
 
 <p align="center">
-<img src = "https://avatars.githubusercontent.com/u/123650396?v=4"  height="100"
-alt="AaMna AnSari">
+  <a href="https://github.com/aamna-ansari" target="_blank" rel="aamna-ansari">
+    <img 
+      src="https://avatars.githubusercontent.com/u/123650396?v=4" 
+      height="100" 
+      alt="AaMna AnSari">
+  </a>
 </p>
 <p align="center">
 <a href = "https://www.linkedin.com/in/aamnansari/" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ios/50/228BE6/linkedin-circled--v1.png" alt="linkedin-circled"/></a>

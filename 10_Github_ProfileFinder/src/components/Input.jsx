@@ -1,14 +1,29 @@
 import React, { useEffect, useState } from 'react'
+import Card from './Card';
 
 const Input = () => {
-  const [userName, setUserName]= useState ('aamna-ansari')
+  const [userName, setUserName]= useState ('aamna-ansari');
+  const [profileData, setProfileData] = useState(null);
 
-  useEffect(()=>{
+  // Fetch GitHub profile data for the given username
+  const fetchProfileData = async () => {
+    try {
+      const response = await fetch(`https://api.github.com/users/${username}`);
+      const data = await response.json();
 
-  },[]);
+      if (response.ok) {
+        setProfileData(data); // Set fetched profile data
+      } else {
+        alert('User not found!');
+      }
+    } catch (error) {
+      alert('Error fetching profile data');
+    }
+  };
+
 
   const handleSearch = () => {
-    // Trigger the card re-render by passing the username
+    fetchProfileData(); // Fetch the profile when search is clicked
   };
 
   return (
@@ -27,7 +42,7 @@ const Input = () => {
          </span>
    
     </div>
-    <Card username={userName} />
+    {/* <Card username={userName} profileData={profileData} /> */}
     </>
   )
 }

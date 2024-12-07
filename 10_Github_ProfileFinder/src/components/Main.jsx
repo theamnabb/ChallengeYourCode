@@ -5,8 +5,10 @@ import React from 'react'
 const Main = () => {
   return (
     <>
+    <main className='p-4'>
     <Input/>
     <Card/>
+    </main>
     </>
   )
 }

@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-const Card = () => {
+const Card = ({ username }) => {
+
+// State for storing fetched profile data
+const [profile, setProfile] = useState(null);
+const [repos, setRepos] = useState([]);
+const [loading, setLoading] = useState(true);
+const [error, setError] = useState(null);
+
+
   return (
     <>
     <div className='w-full sm:w-3/4 md:w-1/2 flex flex-col justify-center relative items-center mx-auto bg-gray-800 text-white rounded-lg mt-2 shadow-md'>

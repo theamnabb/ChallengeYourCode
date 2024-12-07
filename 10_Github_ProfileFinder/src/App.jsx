@@ -1,3 +1,5 @@
+import Header from "./components/Header"
+import Main from "./components/Main"
 
 
 function App() {
@@ -5,7 +7,8 @@ function App() {
 
   return (
     <>
-      <h1>GitHub Profile Finder</h1>
+      <Header/>
+      <Main/>
     </>
   )
 }

@@ -2,7 +2,7 @@ const Card = () => {
   
   return (
     <>
-    <div className='w-full sm:w-3/4 md:w-1/2 flex flex-col justify-center relative items-center mx-auto bg-gray-800 text-white rounded-lg mt-2 shadow-md'>
+    <div className='w-full sm:w-3/4 md:w-1/2 flex flex-col justify-center relative items-center mx-auto dark:bg-gray-800  bg-white dark:text-white text-gray-800  rounded-lg mt-2 drop-shadow-2xl'>
             <div className='w-full flex sm:items-start space-x-4 p-4'>
               <img className='w-20 h-20 border border-white rounded-full object-cover ' src="images/icon-sun" alt="Icon_sun" />
               <div>
@@ -15,7 +15,7 @@ const Card = () => {
 
                         {/* Table Section */}
               <div className="w-full p-4 ">
-    <table className="w-full  mx-auto bg-gray-900 rounded-lg text-white text-center">
+    <table className="w-full  mx-auto dark:bg-gray-900 bg-slate-200 rounded-lg text-center">
       <thead>
         <tr >
           <th className="px-4 py-2">Repos</th>
@@ -46,7 +46,7 @@ const Card = () => {
                 <span className="text-gray-500">
                   <i className="fas fa-link"></i> {/* Website link icon */}
                 </span>
-                <a href="https://github.com/aamna-ansari" target='_blank' className="  text-white hover:underline hover:text-blue-700">
+                <a href="https://github.com/aamna-ansari" target='_blank' className="  hover:underline hover:text-blue-700">
                 www.aamnansari.com
                 </a>
               </li>

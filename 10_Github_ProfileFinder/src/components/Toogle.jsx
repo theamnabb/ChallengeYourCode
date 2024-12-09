@@ -12,7 +12,7 @@ const Toggle = () => {
 
   return (
     <div className="flex flex-row gap-2 items-center">
-      <p className="dark:text-gray-500 text-white uppercase">{theme}</p>
+      <p className="text-gray-500 dark:text-white uppercase">{theme}</p>
       <div className="relative">
         <input
           type="checkbox"
@@ -27,7 +27,7 @@ const Toggle = () => {
           {theme === "light" ? (
             <FaSun className="w-5 h-5 text-white" /> // Sun icon for light mode
           ) : (
-            <FaMoon className="w-4 h-4 text-gray-300" /> // Moon icon for dark mode
+            <FaMoon className="w-4 h-4 text-gray-700" /> // Moon icon for dark mode
           )}
         </label>
       </div>

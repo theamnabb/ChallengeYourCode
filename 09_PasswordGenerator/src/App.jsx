@@ -94,13 +94,13 @@ function App() {
             max={30}
             value={length}
             onChange={(e) => { setLength(e.target.value); }}
-            className="w-full h-2 bg-gray-700 appearance-none cursor-pointer focus:outline-none"
+            className="w-full h-2 bg-gray-700 appearance-none cursor-pointer focus:outline-none  accent-green-400"
           />
 
           {/* Options Section */}
-          <ul className="mt-5 space-y-3">
-            <li className="flex items-center">
-              <input
+          <ul className="mt-5 space-y-3  accent-green-400">
+            <li className="flex items-center ">
+              <input 
                 type="checkbox"
                 id="uppercase"
                 name="uppercase"

@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { FaSun, FaMoon } from "react-icons/fa"; // Import sun and moon icons
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const Toggle = () => {
   const [theme, setTheme] = useState("dark");
 
   const change = () => {
     const body = document.querySelector("body");
-    body.classList.toggle("dark"); // Toggle dark mode
+    body.classList.toggle("dark");
     theme === "dark" ? setTheme("light") : setTheme("dark");
   };
 
@@ -24,11 +24,17 @@ const Toggle = () => {
           htmlFor="toggle"
           className="cursor-pointer transition-all duration-300"
         >
-          {theme === "light" ? (
-            <FaSun className="w-5 h-5 text-white" /> // Sun icon for light mode
-          ) : (
-            <FaMoon className="w-4 h-4 text-gray-700" /> // Moon icon for dark mode
-          )}
+          <div
+            className={`transition-transform duration-700 ease-in-out transform ${
+              theme === "light" ? "rotate-180 scale-110" : "rotate-0 scale-100"
+            }`}
+          >
+            {theme === "light" ? (
+              <FaSun className="w-5 h-5 text-white" />
+            ) : (
+              <FaMoon className="w-4 h-4 text-gray-700" />
+            )}
+          </div>
         </label>
       </div>
     </div>
@@ -36,3 +42,4 @@ const Toggle = () => {
 };
 
 export default Toggle;
+

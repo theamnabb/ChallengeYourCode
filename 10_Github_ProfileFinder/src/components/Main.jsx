@@ -6,7 +6,7 @@ const Main = () => {
   const [username, setUsername] = useState(""); // username (to store the input value)
   const [userData, setUserData] = useState(null); // userData (to store the fetched data)
 
-  // Default username (e.g., Aamna Ansari's GitHub profile)
+  // Default username (e.g., AaMna AnSari's GitHub profile)
   const defaultUsername = "aamna-ansari";
 
   // 📍 FETCH DATA 📍

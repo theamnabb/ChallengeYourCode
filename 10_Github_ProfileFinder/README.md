@@ -11,7 +11,7 @@
 </div>
 
 <h3 align="center">
-          Live Project : 
+          Live Project : https://finderprofile.netlify.app/
 </h3>
 <br />
 
@@ -36,6 +36,13 @@ The GitHub Profile Finder is a sleek and interactive web app that allows users t
 - **Version Control:** Git and GitHub
 - **Hosting:** Netlify
 - **Code Editor and tools**: VS Code
+
+## Demo 🎥 
+
+<p align="center">
+  <img src="./GPF.gif" alt="Github_ProfileFinder">
+</p>
+
 
 ## Developer 👩‍💻 
 <table>

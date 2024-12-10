@@ -3,32 +3,39 @@ import Card from "./Card";
 import Input from "./Input";
 
 const Main = () => {
-  const [username, setUsername] = useState(""); // username (to store the input value).
+  const [username, setUsername] = useState(""); // username (to store the input value)
   const [userData, setUserData] = useState(null); // userData (to store the fetched data)
 
-  // 📍 FETCH DATA 📍
+  // Default username (e.g., Aamna Ansari's GitHub profile)
+  const defaultUsername = "aamna-ansari";
 
-  const fetchData = async () => {
+  // 📍 FETCH DATA 📍
+  const fetchData = async (user = username || defaultUsername) => {
     try {
-      const respone = await fetch("https://jsonplaceholder.typicode.com/users");
-      const data = respone.json();
-      setUserData(data);
+      const response = await fetch(`https://api.github.com/users/${user}`);
+      const data = await response.json();
+      setUserData(data); // Set user data
     } catch (error) {
       console.log("User Not Found");
     }
   };
 
+  // Automatically fetch data for the default user on initial render
   useEffect(() => {
-    if (username) {
+    fetchData(defaultUsername);
+  }, []);
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
       fetchData();
     }
-  }, [username]);
+  };
 
   return (
     <>
       <main className="p-4">
-        <Input username={username} setUsername={setUsername} fetchData={fetchData} />
-        <Card />
+        <Input username={username} setUsername={setUsername} fetchData={fetchData} handleKeyPress={handleKeyPress} />
+        {userData && <Card data={userData} />} {/* Display data only if fetched */}
       </main>
     </>
   );

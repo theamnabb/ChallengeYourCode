@@ -1,8 +1,13 @@
-const Input = ({ username, setUsername, fetchData }) => {
+const Input = ({ username, setUsername, fetchData ,handleKeyPress}) => {
   const handleUsername = (e) => {
     console.log(e.target.value);
     setUsername(e.target.value);
   };
+
+  const handleSearchClick = (e) => {
+    e.preventDefault();
+    fetchData();  
+};
 
   return (
     <>
@@ -12,9 +17,12 @@ const Input = ({ username, setUsername, fetchData }) => {
           type="text"
           value={username}
           onChange={handleUsername}
+          onKeyPress={handleKeyPress}
           placeholder="Search Github username...."
         />
-        <span className="dark:text-white  text-gray-600 absolute right-0 top-[40%] sm:right-1/4 px-8 cursor-pointer">
+        <span
+        onClick={handleSearchClick}
+        className="dark:text-white  text-gray-600 absolute right-0 top-[40%] sm:right-1/4 px-8 cursor-pointer">
           <i className="fas fa-search"></i>
         </span>
       </div>

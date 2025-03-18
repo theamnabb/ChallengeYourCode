@@ -20,3 +20,6 @@
 [10_Github_ProfileFinder](https://finderprofile.netlify.app/)
 
 [11_Portfolio_with_tailwindCSS](https://portfoliocreatetailwind.netlify.app/)
+
+[12_Devxcel_NextJS](https://dev-xcel.vercel.app/)
+

@@ -7,7 +7,7 @@ const Main = () => {
   const [userData, setUserData] = useState(null); // userData (to store the fetched data)
 
   // Default username (e.g., AaMna AnSari's GitHub profile)
-  const defaultUsername = "aamna-ansari";
+  const defaultUsername = "theamnabb";
 
   // 📍 FETCH DATA 📍
   const fetchData = async (user = username || defaultUsername) => {
